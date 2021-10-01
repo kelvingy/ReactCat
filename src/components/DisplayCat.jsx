@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import CatInfo from './CatInfo'
+import CatInfo from './CatInfo';
+import catA from '../resources/BSH.JPG'
+import catB from '../resources/dewen.JPG'
+import catC from '../resources/egyptian.JPG'
+import catD from '../resources/maine.JPG'
+import catE from '../resources/persian.JPG'
+import catF from '../resources/ragdoll.JPG'
+
 class DisplayCat extends React.Component{
     state={
         text:[],
@@ -47,7 +54,7 @@ class DisplayCat extends React.Component{
         DevonInfo:"",
         MaineInfo:"",
     })
-        this.setState( {imageBSH: "./resources/BSH.jpg"})
+        this.setState( {imageBSH: catA})
     }
     handleDevon(){
         this.setState({ imageBSH: "",
@@ -65,7 +72,7 @@ class DisplayCat extends React.Component{
         MaineInfo:"",
     
     })
-        this.setState( {imageDevon: "./resources/dewen.jpg"})
+        this.setState( {imageDevon: catB})
     }
     handleMaine(){
         this.setState({ imageBSH: "",
@@ -82,7 +89,7 @@ class DisplayCat extends React.Component{
         DevonInfo:"",
         MaineInfo:"Although Maine Coon cats are friendly to humans, they are not very clingy. They are more like an equal partner for people. They are easy-going, relaxed, barking, and can get along with children, dogs and other cats. Maine Coon cats are very tall and strong, with a body length of more than 100 cm (nose to tip of tail) and a weight of 10 kg. Designated as the state cat of Maine, USA."
     })
-        this.setState( {imageMaine: "./resources/maine.jpg"})
+        this.setState( {imageMaine: catD})
     }
  
     handleEgyptian(){
@@ -100,7 +107,7 @@ class DisplayCat extends React.Component{
         DevonInfo:"",
         MaineInfo:"",
     })
-        this.setState( {imageEgyptian: "./resources/egyptian.jpg"})
+        this.setState( {imageEgyptian: catC})
     }
     handlePersian(){
         this.setState({ imageBSH: "",
@@ -117,7 +124,7 @@ class DisplayCat extends React.Component{
         DevonInfo:"",
         MaineInfo:"",
     })
-        this.setState( {imagePersian: "./resources/persian.jpg"})
+        this.setState( {imagePersian: catE})
 
     }
     handleRagdoll = () =>{
@@ -135,7 +142,7 @@ class DisplayCat extends React.Component{
         DevonInfo:"",
         MaineInfo:"",
     })
-        this.setState({imageRagdoll: "./resources/ragdoll.jpg"})
+        this.setState({imageRagdoll: catF})
     }
 
     getButtonClassses(){
